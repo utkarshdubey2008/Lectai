@@ -3,7 +3,7 @@ from lectai import LectAI
 
 class TestLectAI(unittest.TestCase):
     def setUp(self):
-        self.client = LectAI(base_url="https://hidden-endpoint-url.com")
+        self.client = LectAI(base_url="https://deepseekai-api.vercel.app/chat/{}")
 
     def test_get_response(self):
         response = self.client.get_response("Hello, Lect AI!")
